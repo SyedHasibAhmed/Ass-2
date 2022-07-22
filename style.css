@@ -1,0 +1,331 @@
+/* ---------------
+        First part 
+-------------------*/
+.container {
+    position: relative;
+    text-align: left;
+    color: white;
+    background-color: black;
+    border-radius: 25px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 60px;
+    display: flex;
+
+
+}
+
+.text-position {
+    margin-left: 80px;
+    padding-top: 80px;
+    margin-bottom: 60px;
+
+}
+
+.heading {
+    font-size: 55px;
+}
+
+.button {
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+/* -------------------
+Boll animation 
+---------------------*/
+
+@keyframes sliding {
+    0% {
+        transform: rotate(odeg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.boll {
+    margin-top: 100px;
+    margin-left: 30px;
+    animation: sliding 100000000s timing-function delay iteration-count infinite fill-mode;
+}
+
+.football-one:hover {
+    transform: rotate(60deg);
+}
+
+/* .box container {
+    width: 60px;
+    height: 60px;
+    border: 2px solid khaki;
+    background-color: crimson;
+} */
+
+/* 
+.bouncingball {
+    width: 140px;
+    height: 140px;
+    border-radius: 100%;
+    background: #CCC;
+    animation: bounce 1s;
+    transform: translateY(0px);
+    animation-iteration-count: infinite;
+    position: absolute;
+    margin: 50px;
+} */
+
+.img {
+    display: block;
+    margin-left: 70%;
+    margin-right: auto;
+    margin-top: 370px;
+
+}
+
+
+/* ---------------------
+         Second part 
+         ------------------------*/
+
+.second-part {
+    margin-top: 60px;
+    margin-left: 60px;
+    display: flex;
+}
+
+.one {
+    background-color: black;
+    border-radius: 25px;
+    padding: 24px;
+}
+
+.button-one {
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 200px;
+    margin: 16px 0;
+}
+
+/* -----------------------------
+         Blogs 
+         ------------------*/
+.blogs {
+    margin-left: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row: 26px;
+    grid-column-gap: 24px;
+    border: 10px;
+    box-shadow: 5px;
+}
+
+/* .blogs .thumbnail img {
+    width: 177px;
+    height: 117px;
+} */
+.a-button {
+    text-decoration: none;
+    font-size: 16px;
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    /* text-align: center; */
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    /* margin: 4px 2px; */
+    /* cursor: pointer; */
+    /* margin-left: 30px; */
+    margin-top: 15px;
+    margin-bottom: 40px;
+    margin-right: 30px;
+    border-radius: 5px;
+}
+
+.blog-title {
+    font-size: 20px;
+}
+
+.course-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Font awsome  */
+/* .fa-clock {
+    color: black;
+} */
+/* .fa-message-dots {
+    color: black;
+} */
+
+
+
+
+/* -----------------------------------
+                  footer 
+                  ------------------------------------------*/
+
+.footer {
+    background-color: burlywood;
+    /* height: 30px; */
+    /* background-size: 300px 100px; */
+
+}
+
+.h1-tit {
+    color: black;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.hr-class {
+    border: 1px solid;
+    color: white;
+    padding-top: 20px;
+
+
+}
+
+.p-footer {
+    color: black;
+    display: flex;
+    text-indent: 50px;
+    margin-left: 300px;
+    padding-bottom: 50px;
+
+}
+
+.media {
+    display: flex;
+    text-indent: 50px;
+    margin-left: 470px;
+    padding-bottom: 50px;
+    padding-bottom: 55px;
+    font-size: 50px;
+
+}
+
+/*----------------------------------------
+             Media Queries 
+             --------------------------------------------*/
+
+
+/* Mobiel Devices */
+@media only screen and (max-width:688px) {
+    .container {
+        /* background-color: red; */
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        flex-direction: column;
+
+    }
+
+    .second-part {
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        flex-direction: column;
+    }
+
+    .blogs {
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        flex-direction: column;
+    }
+
+    .footer {
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        flex-direction: column;
+
+    }
+}
+
+
+/* Tablet devices */
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .container {
+        /* background-color: red; */
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        flex-direction: column;
+
+    }
+
+    .second-part {
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        flex-direction: column;
+
+    }
+
+    .blogs {
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        flex-direction: column;
+
+    }
+
+    .footer {
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        flex-direction: column;
+
+    }
+}
+
+
+/*------------------------------------
+ Upcoming match
+ ------------------- */
+
+.second-part>.one>.button-one:hover {
+    background-color: red;
+}
+
+.second-part {
+    margin-right: 35px;
+}
+
+
+.flag {
+    display: flex;
+}
+
+.third {
+    margin-left: 60px;
+    text-align: center;
+    box-shadow: 5px;
+}
+
+/* flag */
+.flag-one {
+    display: flex;
+    margin-left: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row: 26px;
+    grid-column-gap: 24px;
+    border: 10px;
+    box-shadow: 5px;
+    margin-right: 25px;
+}
